@@ -1,0 +1,51 @@
+@import "compass";
+
+@import "partials/inc";
+@import "partials/navigation";
+@import "partials/layout";
+@import "partials/toolbar";
+@import "partials/spinner";
+
+@import "partials/station-list";
+@import "partials/playing-info";
+
+
+html {
+  background-color: $out-bg-color;
+}
+
+body {
+  @extend %sans-font;
+  @include box-shadow(#bbb 0 0 3px);
+
+  background-color: $in-bg-color;
+  margin: auto;
+  max-width: 800px;
+}
+
+a {
+  color: $link-color;
+  text-decoration: none;
+}
+
+#content {
+  padding: 1em;
+}
+
+#footer {
+  padding: 1em;
+  clear: both;
+  background-color: $toolbar-bg-color;
+  color: $dark-gray;
+  font-size: 0.8em;
+}
+
+ul.controls {
+  margin-left: 2em;
+}
+
+#search-box {
+  border: 1px solid $light-gray;
+  padding: 0.6em;
+  font-size: 1.1em;
+}

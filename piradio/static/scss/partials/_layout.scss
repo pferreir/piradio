@@ -1,0 +1,21 @@
+.g2 {
+    float: left;
+    width: 50%;
+
+    &:nth-child(3n) {
+        clear: both;
+    }
+}
+
+#wrap {
+    margin: 0 auto;
+    max-width: 1024px;
+}
+
+.right {
+    float: right;
+}
+
+.left {
+    float: left;
+}

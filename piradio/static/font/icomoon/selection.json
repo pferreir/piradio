@@ -1,0 +1,125 @@
+{
+	"IcoMoonType": "selection",
+	"icons": [
+		{
+			"icon": {
+				"paths": [
+					"M192 128l640 384-640 384z"
+				],
+				"tags": [
+					"play",
+					"media control",
+					"audio"
+				],
+				"grid": 16
+			},
+			"properties": {
+				"order": 1,
+				"id": 267,
+				"prevSize": 32,
+				"code": 58880,
+				"name": "play",
+				"ligatures": ""
+			}
+		},
+		{
+			"icon": {
+				"paths": [
+					"M128 128h768v768h-768z"
+				],
+				"tags": [
+					"stop",
+					"media control",
+					"audio",
+					"square"
+				],
+				"grid": 16
+			},
+			"properties": {
+				"order": 2,
+				"id": 269,
+				"prevSize": 32,
+				"code": 58881,
+				"name": "stop",
+				"ligatures": ""
+			}
+		},
+		{
+			"icon": {
+				"paths": [
+					"M128 128h320v768h-320zM576 128h320v768h-320z"
+				],
+				"tags": [
+					"pause",
+					"media control",
+					"audio"
+				],
+				"grid": 16
+			},
+			"properties": {
+				"order": 3,
+				"id": 268,
+				"prevSize": 32,
+				"code": 58882,
+				"name": "pause",
+				"ligatures": ""
+			}
+		},
+		{
+			"icon": {
+				"paths": [
+					"M320 192l704-192v64 128 544c0 88.366-100.29 160-224 160s-224-71.634-224-160c0-88.366 100.29-160 224-160 34.358 0 66.902 5.532 96 15.406v-329.588l-448 122.182v480c0 88.366-100.288 160-224 160-123.712 0-224-71.634-224-160 0-88.366 100.288-160 224-160 34.358 0 66.902 5.532 96 15.406v-335.406-192z"
+				],
+				"tags": [
+					"music",
+					"song",
+					"audio",
+					"sound"
+				],
+				"grid": 16
+			},
+			"properties": {
+				"order": 4,
+				"id": 17,
+				"prevSize": 32,
+				"code": 58884,
+				"name": "music",
+				"ligatures": ""
+			}
+		}
+	],
+	"height": 1024,
+	"metadata": {},
+	"preferences": {
+		"fontPref": {
+			"prefix": "icon-",
+			"metadata": {},
+			"showGlyphs": true,
+			"metrics": {
+				"emSize": 1024,
+				"baseline": 6.25,
+				"whitespace": 50
+			},
+			"resetPoint": 58880,
+			"showQuickUse": true,
+			"quickUsageToken": false,
+			"showMetrics": true,
+			"showMetadata": false
+		},
+		"imagePref": {
+			"color": 0,
+			"height": 32,
+			"columns": 16,
+			"margin": 16,
+			"png": false,
+			"sprites": true
+		},
+		"historySize": 100,
+		"showCodes": true,
+		"gridSize": 16,
+		"showLiga": false,
+		"showGrid": true,
+		"showGlyphs": true,
+		"showQuickUse": true
+	}
+}

@@ -1,0 +1,51 @@
+{% extends 'layouts/main.html' %}
+{% block title %}Home{% endblock %}
+
+{% block head %}
+
+  {% raw %}
+  <script type="text/jinja2" id="tpl_station_item">
+    <li class="station" data-station-id="{{id}}">
+      <img src="{% if has_logo %}/logo/{{id}}{% else %}/static/img/radio.png{% endif %}" title="{{name}}"/>
+      <a href="#">{{name}}</a>
+      <div class="spinner">
+        <div class="rect1"></div>
+        <div class="rect2"></div>
+        <div class="rect3"></div>
+        <div class="rect4"></div>
+        <div class="rect5"></div>
+      </div>
+    </li>
+  </script>
+  {% endraw %}
+
+{% endblock %}
+
+{% block navbar_content %}
+  <ul class="controls toolbar left">
+    <li id="play_button" class="button icon-play"></li
+    ><li id="pause_button" class="button icon-pause"></li
+    ><li id="stop_button" class="button icon-stop"></li>
+  </ul>
+{% endblock %}
+
+{% block content %}
+  <div class="wrapper">
+    <div id="playing-info" class="g2">
+      <div id="display">
+        <div class="nothing">Not playing anything at the moment</div>
+        <div class="station">
+          <h2 class="name"></h2>
+          <img class="logo" src=""/>
+          <div class="song"></div>
+        </div>
+      </div>
+    </div>
+    <div id="station-list" class="g2">
+      <h2>Station List</h2>
+      <input type="text" id="search-box" placeholder="Please write a station name..." />
+      <ul>
+      </ul>
+    </div>
+  </div>
+{% endblock %}

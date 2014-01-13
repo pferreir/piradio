@@ -1,0 +1,14 @@
+div.topbar {
+    width: 100%;
+    height: 2em;
+
+    background: $nav-bg-color;
+    @include background-image(linear-gradient(top,  $nav-bg-color,
+                            darken( $nav-bg-color, 10%)));
+
+    .title {
+        color: lighten($nav-bg-color, 50%);
+        margin-left: 1em;
+        font-size: 1.5em;
+    }
+}

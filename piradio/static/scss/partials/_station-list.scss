@@ -1,0 +1,46 @@
+div#station-list {
+  ul {
+
+    list-style-type: none;
+    padding: 0;
+    overflow-y: auto;
+
+    max-height: 245px;
+
+    li {
+      display: block;
+      height: 40px;
+      padding: 5px;
+
+      img {
+        display: inline-block;
+        max-height: 40px;
+        max-width: 40px;
+        vertical-align: middle;
+      }
+
+      a {
+        margin-left: 1em;
+        display: inline-block;
+        line-height: 40px;
+        vertical-align: middle;
+      }
+
+      .spinner {
+        display: none;
+        vertical-align: middle;
+        margin-left: 1em;
+      }
+
+      &.selected {
+        .spinner {
+          display: inline-block;
+        }
+      }
+
+      &:hover {
+        background: $light-gray;
+      }
+    }
+  }
+}

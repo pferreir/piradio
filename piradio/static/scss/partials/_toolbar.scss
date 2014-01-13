@@ -1,0 +1,52 @@
+ul.toolbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    @include user-select(none);
+    @include background-image(linear-gradient(top,  $toolbar-bg-color,
+                              darken($toolbar-bg-color, 20%)));
+
+    li {
+        display: inline-block;
+        height: 2em;
+        line-height: 2em;
+        width: 2em;
+        text-align: center;
+        text-shadow: 1px 1px lighten($toolbar-button-color, 15%);
+
+        &.button {
+            border-right: 1px solid darken($toolbar-bg-color, 10%);            
+
+            &:not(.active) {
+                cursor: pointer;    
+                &:hover {
+                    @include background-image(
+                        linear-gradient(top, lighten($toolbar-bg-color, 5%),
+                                             darken($toolbar-bg-color, 15%)));
+
+                }
+
+                &:active {
+                    background-color: darken($toolbar-bg-color, 10%);
+                    background-image: none;
+                }
+            }
+
+            &.active {
+                color: #fff;
+                text-shadow: rgba(#fff, 0.7) 0 0 5px;
+                @include box-shadow(darken($toolbar-bg-color, 20%) 0 0 5px 2px inset);
+            }
+
+            &.active, &:active {
+                background-color: darken($toolbar-bg-color, 10%);
+                background-image: none;
+            }
+
+            &:first-child {
+                border-left: 1px solid darken($toolbar-bg-color, 10%);
+            }
+        }
+    }
+}

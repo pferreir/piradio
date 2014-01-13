@@ -1,0 +1,9 @@
+scss:
+    filters: pyscss
+    output: gen/default.css
+    contents:
+        - css/icomoon.css
+        - scss/main.scss
+    depends:
+        - scss/partials/*.scss
+        - scss/partials/inc/*.scss
