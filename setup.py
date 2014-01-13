@@ -1,7 +1,5 @@
 from setuptools import setup
-from pip.req import parse_requirements
 
-print([str(r.req).split('==')[0] for r in parse_requirements('requirements.txt')])
 
 setup(
     name='piradio',
