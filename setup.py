@@ -11,6 +11,7 @@ setup(
     },
     test_suite='piradio.test',
     packages=['piradio'],
+    package_data={'piradio': ['*.yaml']},
     license='Creative Commons Attribution-Noncommercial-Share Alike license',
     long_description=open('README.md').read(),
     install_requires=[]
