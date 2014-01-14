@@ -48,7 +48,7 @@ Listing stations:
 Bulk importing stations:
 
     $ curl https://gist.github.com/pferreir/ded13377e70bc72738d1/raw/95f5b455ac987134fcd7d48a16d9e5071bc4bf15/stations.yaml > /tmp/stations.yaml
-    $ pirario import_stations /tmp/stations.yaml
+    $ piradio import_stations /tmp/stations.yaml
 
 
 ## Credits
