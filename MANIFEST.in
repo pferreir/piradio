@@ -1,0 +1,3 @@
+recursive-include piradio/templates *
+recursive-include piradio/static *
+include piradio/bundles.yaml
