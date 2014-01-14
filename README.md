@@ -1,5 +1,7 @@
 # piRadio
 
+![screenshot](https://raw.github.com/pferreir/piradio/master/screen.png)
+
 ## Installing
 
 *(virtualenv recommended)*
