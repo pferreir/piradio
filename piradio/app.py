@@ -11,7 +11,8 @@ from .models import db
 
 def create_app():
     app = Flask(__name__)
-    app.config.from_object('config')
+    app.config.from_object('piradio.config')
+    app.config.from_envvar('PIRADIO_CONFIG')
 
     from .views import views
     app.register_blueprint(views)

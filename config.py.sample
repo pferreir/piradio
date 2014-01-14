@@ -5,4 +5,4 @@ SECRET_KEY = 'OVERRIDE THIS PLEASE'
 
 # Grabs the folder where the script runs.
 
-SQLALCHEMY_DATABASE_URI = 'sqlite:///tmp/piradio.db'
+SQLALCHEMY_DATABASE_URI = 'sqlite:////tmp/piradio.db'
