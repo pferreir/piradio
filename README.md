@@ -16,7 +16,10 @@ Initializing DB:
 
     $ piradio db upgrade
 
-Edit `config.py` and change Flask's secret key.
+Make a copy of `config.py.sample` and change Flask's secret key. You can also set your DB path.
+Then, tell piradio where to find your config file:
+
+    $ export PIRADIO_CONFIG=/path/to/config.py
 
 ## Running it
 
